@@ -95,6 +95,11 @@ commands:
       component: frontend
       commandLine: yarn install
       workingDir: $PROJECT_SOURCE
+  - id: start-server
+    exec:
+      component: frontend
+      commandLine: yarn start
+      workingDir: $PROJECT_SOURCE
 events:
   postStart:
     - init-project
